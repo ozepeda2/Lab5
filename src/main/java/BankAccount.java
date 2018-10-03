@@ -13,6 +13,12 @@ public class BankAccount {
      * You may want to use this to distinguish between different kinds of accounts.
      */
     public enum BankAccountType {
+        /**
+         * @param CHECKINGS checkings acct.
+         * @param SAVINGS savings acct.
+         * @param STUDENT student acct.
+         * @param WORKPLACE workplace acct.
+         */
         CHECKINGS,
         SAVINGS,
         STUDENT,

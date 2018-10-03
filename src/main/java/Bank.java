@@ -8,9 +8,13 @@
  * @see <a href="https://cs125.cs.illinois.edu/lab/5/">Lab 5 Description</a>
  */
 public class Bank {
-
-    public String bankName;
-
+    /**
+     * @param bankName private instance variable of our bank's name
+     */
+    private String bankName;
+    /**
+     * Constructor for Bank, initializes instance variable bankName to "Illini Bank".
+     */
     public Bank() {
         bankName = "Illini Bank";
     }
@@ -29,6 +33,7 @@ public class Bank {
         /*
          * Implement this function
          */
+
     }
 
     /**
@@ -79,7 +84,10 @@ public class Bank {
          */
     }
 
-    public static int totalAccounts = 0;
+    /**
+     *  Creates private instance variable of type int to totalAccounts and sets it to zero.
+     */
+    private static int totalAccounts = 0;
     /**
      * Uses static variable to get number of bank accounts opened.
      *
@@ -106,8 +114,8 @@ public class Bank {
         BankAccount account1 = new BankAccount("John Doe", BankAccount.BankAccountType.CHECKINGS);
         System.out.println("Bank account for John Doe created");
 
-        BankAccount account2 = new BankAccount("Jony Ive", BankAccount.BankAccountType.STUDENT);
-        System.out.println("Bank account for Johy Ive created\n\n");
+        BankAccount account2 = new BankAccount("Johnny Ive", BankAccount.BankAccountType.STUDENT);
+        System.out.println("Bank account for Johny Ive created\n\n");
 
         // Deposit money to both accounts and print new balance
         bank.depositMoney(account1, 1000.0);
